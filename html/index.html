@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jylah McKinney | Photography</title>
+    <meta
+      name="description"
+      content="Spreading God's Kingdom one photograph at a time. Jylah McKinney's photography portfolio showcases a collection of stunning images that capture the beauty of the world."
+    />
+    <meta name="author" content="Jylah McKinney" />
+    <meta
+      name="keywords"
+      content="Jylah McKinney, photography, portfolio, images, art"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script>
+      window.onload = function () {
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".gallery .slide");
+
+        function showSlides() {
+          slides.forEach((slide) => slide.classList.remove("active"));
+
+          if (slideIndex >= slides.length) {
+            slideIndex = 0;
+          }
+
+          slides[slideIndex].classList.add("active");
+          slideIndex++;
+
+          setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+
+        showSlides();
+      };
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>McKinney Photography</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <h2>Welcome to My Photography Portfolio</h2>
+          <p>Spreading God's Kingdom one photograph at a time.</p>
+          <p>
+            Explore moments of light, love, and truth through my lens. Every
+            image tells a story, and every story begins here.
+          </p>
+          <a href="portfolio.html" class="btn">View Portfolio</a>
+        </section>
+        <section class="portfolio-preview">
+          <h2 class="gallery-heading">Faith through Focus</h2>
+          <p class="gallery-subtitle">A visual testimony</p>
+          <div class="gallery">
+            <img
+              src="../images/photo1.jpg"
+              alt="Portfolio photo 1"
+              class="slide"
+            />
+            <img
+              src="../images/photo2.jpg"
+              alt="Portfolio photo 2"
+              class="slide"
+            />
+            <img
+              src="../images/photo3.jpg"
+              alt="Portfolio photo 3"
+              class="slide"
+            />
+            <img
+              src="../images/photo4.jpg"
+              alt="Portfolio photo 4"
+              class="slide"
+            />
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2023 Jylah McKinney. All rights reserved.</p>
+        <p>
+          Follow me on
+          <a href="https://instagram.com/jaymckinphotography" target="_blank"
+            >Instagram</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
