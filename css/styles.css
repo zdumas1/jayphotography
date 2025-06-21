@@ -327,6 +327,7 @@ footer a:focus {
   scroll-snap-type: x mandatory;
   padding-bottom: 1rem;
   padding-left: 1rem;
+  background: red;
 }
 
 .horizontal-scroll::-webkit-scrollbar {
