@@ -274,7 +274,7 @@ footer a:focus {
   color: var(--accent);
 }
 
-.about-text,
+.about-text p,
 .contact-text p {
   font-size: 1rem;
   line-height: 1.6;
@@ -301,4 +301,48 @@ footer a:focus {
 
 .about-image {
   animation-delay: 0.2s;
+}
+
+.story-section {
+  padding: 3rem 1rem;
+  background-color: var(--background, #121212); /* dark mode fallback */
+  color: var(--text, #f0f0f0);
+  text-align: center;
+}
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+.section-subtitle {
+  font-size: 1.25rem;
+  color: var(--main-text);
+  margin-bottom: 2rem;
+}
+.horizontal-scroll {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  display: none; /* hide scrollbar for cleaner look */
+}
+
+.horizontal-scroll img {
+  height: 400px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.horizontal-scroll img:hover {
+  transform: scale(1.03);
 }
