@@ -263,7 +263,12 @@ footer a:focus {
   max-width: 600px;
   animation-delay: 0.4s;
 }
-
+.about header-background {
+  background-color: var(--section);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
 .about-text,
 .contact-text h2 {
   font-family: "Playfair Display", serif;
