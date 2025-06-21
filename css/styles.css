@@ -353,3 +353,30 @@ footer a:focus {
 .horizontal-scroll::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
+
+.scattered-gallery {
+  padding: 3rem 1rem;
+  background-color: var(--background);
+  color: var(--main-text);
+  text-align: center;
+}
+
+.masonry {
+  column-count: 3;
+  column-gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.masonry img {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  break-inside: avoid;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.masonry img:hover {
+  transform: scale(1.03);
+}
