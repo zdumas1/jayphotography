@@ -238,6 +238,7 @@ footer a:focus {
   padding: 4rem 1rem;
 }
 
+/* About and Contact sections */
 .about-container,
 .contact-container {
   display: flex;
@@ -247,6 +248,7 @@ footer a:focus {
   margin: 0 auto;
   align-items: center;
   justify-content: center;
+  background-color: var(--section);
 }
 
 .about-image img {
