@@ -329,6 +329,8 @@ footer a:focus {
   -webkit-overflow-scrolling: touch;
   height: auto;
   width: 100%;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
 }
 .horizontal-scroll img {
   height: 300px;
@@ -345,4 +347,8 @@ footer a:focus {
 
 .horizontal-scroll img:hover {
   transform: scale(1.05);
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
