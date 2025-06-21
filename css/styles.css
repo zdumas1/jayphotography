@@ -1,16 +1,17 @@
 /* Color palette */
 :root {
-  --light-blue: #79b1e7; /* light blue background */
-  --gold: #ffe23b; /* gold accents */
-  --black: #000000; /* main text color */
+  --background: #121212;
+  --accent: #d7b377;
+  --section: #1c1a18;
+  --main-text: #f0ede8; /* main text color */
   --white: #ffffff;
-  --dark-blue: gold; /* dark blue for contrast */
+  --dark-blue: accent; /* dark blue for contrast */
 }
 html,
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--light-blue); /* Make background full screen */
+  background-color: var(--background); /* Make background full screen */
 }
 
 /* Base styles */
@@ -33,16 +34,16 @@ h3,
 h4 {
   font-family: "Playfair Display", serif;
   font-weight: 600;
-  color: var(--black);
+  color: var(--main-text);
 }
 
 /* Header */
 header {
-  background-color: var(--light-blue);
-  color: var(--black);
+  background-color: var(--section);
+  color: var(--main-text);
   padding: 2rem 1rem;
   text-align: center;
-  border-bottom: 3px solid var(--gold);
+  border-bottom: 3px solid var(--accent);
 }
 
 header h1 {
@@ -69,7 +70,7 @@ nav ul {
 }
 
 nav li a {
-  color: var(--black);
+  color: var(--main-text);
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1rem;
@@ -80,8 +81,8 @@ nav li a {
 
 nav li a:hover,
 nav li a:focus {
-  border-bottom: 2px solid var(--gold);
-  color: var(--gold);
+  border-bottom: 2px solid var(--accent);
+  color: var(--accent);
   outline: none;
 }
 
@@ -89,21 +90,32 @@ nav li a:focus {
 .hero {
   padding: 2rem 2rem 1rem 2rem;
   text-align: center;
-  background-color: var(--light-blue);
+  background-color: var(--section);
   margin-bottom: 0rem;
 }
 
 .hero h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: var(--black);
+  color: var(--main-text);
 }
 
 .hero p {
   font-size: 1.25rem;
   max-width: 600px;
   margin: 0 auto;
-  color: var(--black);
+  color: var(--main-text);
+}
+.hero a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent);
+  color: var(--main-text);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 /* Gallery grid */
@@ -146,15 +158,15 @@ nav li a:focus {
   margin: 0 auto;
   padding: 2rem;
   margin-top: 0rem;
-  background-color: var(--light-blue);
+  background-color: var(--section);
 }
 .btn {
   display: inline-block;
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 0.75rem 1 rem;
-  background-color: gold;
-  color: black;
+  background-color: accent;
+  color: main-text;
   font-weight: bold;
   text-decoration: none;
   border-radius: 6px;
@@ -166,7 +178,7 @@ nav li a:focus {
   text-align: center;
   margin-top: 0;
   margin-bottom: 2rem;
-  color: #003366; /* dark blue, feels bold and grounded */
+  color: #d7b377;
   position: relative;
 }
 
@@ -175,7 +187,7 @@ nav li a:focus {
   display: block;
   width: 80px;
   height: 4px;
-  background-color: gold;
+  background-color: accent;
   margin: 1rem auto 0;
   border-radius: 2px;
 }
@@ -184,24 +196,25 @@ nav li a:focus {
   font-size: 1.25rem;
   margin-top: -1rem;
   margin-bottom: 2rem;
-  color: #444;
+  color: #888888;
   font-style: italic;
 }
 
 .btn:hover {
-  background-color: darkgoldenrod;
+  background-color: darkaccent enrod;
 }
 .gallery img:hover,
 .gallery img:focus {
   transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.6); /* subtle gold glow */
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.6); /* subtle accent
+   glow */
   outline: none;
 }
 
 /* Footer */
 footer {
-  background-color: var(--light-blue);
-  color: var(--black);
+  background-color: var(--background);
+  color: var(--main-text);
   text-align: center;
   padding: 1.5rem;
   font-size: 0.9rem;
