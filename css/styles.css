@@ -5,7 +5,7 @@
   --section: #1c1a18;
   --main-text: #f0ede8; /* main text color */
   --white: #ffffff;
-  --dark-blue: accent; /* dark blue for contrast */
+  --dark-blue: var(--accent); /* dark blue for contrast */
 }
 html,
 body {
@@ -165,8 +165,8 @@ nav li a:focus {
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 0.75rem 1 rem;
-  background-color: accent;
-  color: main-text;
+  background-color: var(--accent);
+  color: var(--main-text);
   font-weight: bold;
   text-decoration: none;
   border-radius: 6px;
@@ -201,7 +201,7 @@ nav li a:focus {
 }
 
 .btn:hover {
-  background-color: darkaccent enrod;
+  background-color: #b38b50;
 }
 .gallery img:hover,
 .gallery img:focus {
@@ -339,6 +339,8 @@ footer a:focus {
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .horizontal-scroll img:hover {
