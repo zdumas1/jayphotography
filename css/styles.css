@@ -266,7 +266,7 @@ footer a:focus {
 .about header-background {
   background-color: var(--section);
 }
-.about-text,
+.about-text h2,
 .contact-text h2 {
   font-family: "Playfair Display", serif;
   font-size: 2rem;
