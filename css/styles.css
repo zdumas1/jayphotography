@@ -331,6 +331,7 @@ footer a:focus {
   width: 100%;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scroll-behavior: smooth;
 }
 .horizontal-scroll img {
   height: 300px;

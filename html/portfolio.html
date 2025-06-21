@@ -52,5 +52,31 @@
         >
       </p>
     </footer>
+    <script>
+      const scrollContainer = document.querySelector(".horizontal-scroll");
+
+      let scrollAmount = 0;
+      const scrollStep = 1; // how many pixels to scroll per step
+      const scrollDelay = 20; // time between scrolls (in ms)
+
+      function autoScroll() {
+        if (scrollContainer) {
+          scrollAmount += scrollStep;
+          scrollContainer.scrollLeft = scrollAmount;
+
+          // Reset scroll when reaching end
+          if (
+            scrollAmount >=
+            scrollContainer.scrollWidth - scrollContainer.clientWidth
+          ) {
+            scrollAmount = 0;
+          }
+
+          requestAnimationFrame(autoScroll); // smoother than setInterval
+        }
+      }
+
+      autoScroll();
+    </script>
   </body>
 </html>
