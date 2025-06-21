@@ -322,20 +322,17 @@ footer a:focus {
 }
 .horizontal-scroll {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
   padding-bottom: 1rem;
-  padding-left: 1rem;
-  background: red;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  height: auto;
+  width: 100%;
 }
-
-.horizontal-scroll::-webkit-scrollbar {
-  display: none; /* hide scrollbar for cleaner look */
-}
-
 .horizontal-scroll img {
-  height: 400px;
+  height: 300px;
+  width: auto;
   flex: 0 0 auto;
   scroll-snap-align: start;
   border-radius: 12px;
@@ -345,5 +342,5 @@ footer a:focus {
 }
 
 .horizontal-scroll img:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
