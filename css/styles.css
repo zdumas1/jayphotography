@@ -265,9 +265,6 @@ footer a:focus {
 }
 .about header-background {
   background-color: var(--section);
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 .about-text,
 .contact-text h2 {
