@@ -269,7 +269,7 @@ footer a:focus {
   font-family: "Playfair Display", serif;
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: var(--main-text);
+  color: var(--accent);
 }
 
 .about-text,
