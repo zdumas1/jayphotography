@@ -8,11 +8,17 @@
   --dark-blue: var(--accent); /* dark blue for contrast */
   --mutedtext: #bfa76f;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 html,
 body {
   margin: 0;
   padding: 0;
   background-color: var(--background); /* Make background full screen */
+  overflow-x: hidden;
 }
 
 /* Base styles */
