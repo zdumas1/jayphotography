@@ -6,6 +6,7 @@
   --main-text: #f0ede8; /* main text color */
   --white: #ffffff;
   --dark-blue: var(--accent); /* dark blue for contrast */
+  --mutedtext: #bfa76f;
 }
 html,
 body {
@@ -196,7 +197,7 @@ nav li a:focus {
   font-size: 1.25rem;
   margin-top: -1rem;
   margin-bottom: 2rem;
-  color: #888888;
+  color: var(--mutedtext);
   font-style: italic;
 }
 
@@ -320,7 +321,7 @@ footer a:focus {
   font-style: italic;
   margin-top: 0.25rem;
   margin-bottom: 1.5rem;
-  color: #bfa96f; /* warm muted goldish color, softer than the accent */
+  color: #bfa76f; /* warm muted goldish color, softer than the accent */
   font-weight: 400;
   letter-spacing: 0.05em;
 }
