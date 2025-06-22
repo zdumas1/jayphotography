@@ -98,7 +98,7 @@ nav li a:focus {
 .hero h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: var(--main-text);
+  color: var(--accent);
 }
 
 .hero p {
