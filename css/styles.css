@@ -97,7 +97,7 @@ nav li a:focus {
 .hero {
   padding: 2rem 2rem 1rem 2rem;
   text-align: center;
-  background-color: var(--section);
+  background-color: var(--background);
   margin-bottom: 0rem;
 }
 
