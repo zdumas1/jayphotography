@@ -339,16 +339,14 @@ footer a:focus {
   scroll-behavior: smooth;
 }
 .horizontal-scroll img {
-  height: 300px;
+  height: 400px; /* or try 450px or 500px */
   width: auto;
   flex: 0 0 auto;
   scroll-snap-align: start;
   border-radius: 12px;
   object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4); /* slightly stronger shadow */
   transition: transform 0.3s ease;
-  margin: 0 auto;
-  max-width: 1200px;
 }
 
 .horizontal-scroll img:hover {
