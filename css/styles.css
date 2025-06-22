@@ -121,7 +121,7 @@ nav li a:focus {
 
 /* Gallery grid */
 .gallery {
-  background-color: var(--background);
+  background-color: var(--section);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -155,11 +155,9 @@ nav li a:focus {
   z-index: 1;
 }
 .portfolio-preview {
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
   padding: 2rem;
-  margin-top: 0rem;
-  background-color: var(--section);
+  background-color: var(--background);
 }
 .btn {
   display: inline-block;
