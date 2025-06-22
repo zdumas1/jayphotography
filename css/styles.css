@@ -121,7 +121,7 @@ nav li a:focus {
 
 /* Gallery grid */
 .gallery {
-  background-color: var(--section);
+  background-color: var(--background);
   display: flex;
   flex-direction: column;
   align-items: center;
