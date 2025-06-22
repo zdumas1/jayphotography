@@ -384,3 +384,24 @@ footer a:focus {
 .masonry img:hover {
   transform: scale(1.03);
 }
+
+.contact-info {
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--main-text);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: center;
+  background-color: var(--section); /* or any color you want */
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.contact-info a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.contact-info a:hover {
+  color: lighten(var(--accent), 10%);
+}
