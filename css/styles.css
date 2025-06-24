@@ -169,13 +169,14 @@ nav li a:focus {
   display: inline-block;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  padding: 0.75rem 1 rem;
+  padding: 0.5rem 1rem; /* smaller padding */
   background-color: var(--accent);
   color: var(--main-text);
+  font-size: 0.95rem; /* slightly smaller text */
   font-weight: bold;
   text-decoration: none;
-  border-radius: 6px;
-  transition: background 0.3s ease;
+  border-radius: 5px; /* slightly smaller corners */
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .gallery-heading {
   font-family: "Playfair Display", serif;
