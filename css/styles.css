@@ -95,10 +95,10 @@ nav li a:focus {
 
 /* Hero section */
 .hero {
-  padding: 2rem 2rem 1rem 2rem;
+  padding: 2rem 2rem 3.5rem; /* more bottom padding creates visual spacing */
   text-align: center;
   background-color: var(--background);
-  margin-bottom: 0rem;
+  margin-bottom: 0; /* remove double margin */
 }
 
 .hero h2 {
@@ -112,6 +112,9 @@ nav li a:focus {
   max-width: 600px;
   margin: 0 auto;
   color: var(--main-text);
+}
+.hero p:last-of-type {
+  margin-bottom: 0; /* remove gap under the last paragraph */
 }
 .hero a {
   display: inline-block;
@@ -168,8 +171,8 @@ nav li a:focus {
 }
 .btn {
   display: inline-block;
-  margin-top: 2rem; /* more space above */
-  margin-bottom: 0.5rem; /* less space below */
+  margin-top: 1.5rem;
+  margin-bottom: 0; /* no extra space below */
   padding: 0.65rem 1.25rem;
   background-color: var(--accent);
   color: var(--main-text);
