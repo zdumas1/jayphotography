@@ -164,18 +164,19 @@ nav li a:focus {
   width: 100%;
   padding: 2rem;
   background-color: var(--background);
+  margin-top: 1rem; /* reduce this from default 2rem or more */
 }
 .btn {
   display: inline-block;
   margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 0.5rem 1rem; /* smaller padding */
+  margin-bottom: 0.5rem; /* reduced bottom margin */
+  padding: 0.65rem 1.25rem; /* in-between size */
   background-color: var(--accent);
   color: var(--main-text);
-  font-size: 0.95rem; /* slightly smaller text */
+  font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 5px; /* slightly smaller corners */
+  border-radius: 6px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .gallery-heading {
