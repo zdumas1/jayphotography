@@ -201,7 +201,7 @@ nav li a:focus {
   font-size: 1.25rem;
   margin-top: -1rem;
   margin-bottom: 2rem;
-  color: var(--mutedtext);
+  color: var(--main-text);
   font-style: italic;
 }
 
