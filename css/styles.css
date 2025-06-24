@@ -168,7 +168,7 @@ nav li a:focus {
 }
 .btn {
   display: inline-block;
-  margin-top: 1.5rem; /* more space above */
+  margin-top: 2rem; /* more space above */
   margin-bottom: 0.5rem; /* less space below */
   padding: 0.65rem 1.25rem;
   background-color: var(--accent);
