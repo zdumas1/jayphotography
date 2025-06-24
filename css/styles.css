@@ -95,22 +95,24 @@ nav li a:focus {
 
 /* Hero section */
 .hero {
-  padding: 2rem 2rem 3.5rem; /* more bottom padding creates visual spacing */
-  text-align: center;
   background-color: var(--background);
-  margin-bottom: 0; /* remove double margin */
+  padding: 4rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  margin-bottom: 1.25rem;
   color: var(--accent);
 }
-
 .hero p {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 1.5rem auto;
   color: var(--main-text);
 }
 .hero p:last-of-type {
@@ -171,17 +173,16 @@ nav li a:focus {
 }
 .btn {
   display: inline-block;
-  margin-top: 1.5rem;
-  margin-bottom: 0; /* no extra space below */
-  padding: 0.65rem 1.25rem;
+  padding: 0.6rem 1.25rem;
+  font-size: 1rem;
   background-color: var(--accent);
   color: var(--main-text);
-  font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
   border-radius: 6px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease;
 }
+
 .gallery-heading {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
